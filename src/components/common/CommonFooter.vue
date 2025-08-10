@@ -167,7 +167,7 @@ const handleClickFooterButton = (text: string) => {
     justify-content: center;
   }
 
-  &__button {
+  &__button.button {
     height: 179px;
     width: 100%;
     max-width: 358px;

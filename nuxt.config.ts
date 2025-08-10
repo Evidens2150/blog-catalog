@@ -1,3 +1,4 @@
+const isProduction = process.env.NODE_ENV === 'production'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -9,6 +10,7 @@ export default defineNuxtConfig({
     '@/styles/index.css',
   ],
   app: {
+    baseURL: isProduction ? '/blog-catalog/' : '/',
     head: {
       title: 'QTIM',
       htmlAttrs: {
@@ -19,7 +21,7 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0' },
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+        { rel: 'icon', type: 'image/x-icon', href: `${isProduction ? '/blog-catalog/' : '/'}favicon.ico` }
       ],
     }
   },
