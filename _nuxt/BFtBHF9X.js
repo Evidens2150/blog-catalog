@@ -1,0 +1,1 @@
+import{e as o,f as r,c as n,a as l,h as e,o as _}from"./SVTy5zL_.js";const p={class:"image__wrapper"},m=["src","alt"],u=o({__name:"VImage",props:{src:{default:""},alt:{default:""}},setup(s){const a=s,{src:t,alt:c}=r(a);return(i,f)=>(_(),n("div",p,[l("img",{src:e(t),alt:e(c),class:"image"},null,8,m)]))}});export{u as _};
